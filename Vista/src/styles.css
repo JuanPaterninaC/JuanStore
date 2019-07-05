@@ -1,0 +1,511 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Pacifico');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+/*-------------Estilos base---------------*/
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    margin:auto;
+}
+
+.container--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.column {
+    width: 100%;
+}
+
+
+/*------------Estilos Header------------------------*/
+
+.main-header {
+    width: 100%;
+
+}
+.logo {
+    font-size: 1.8em;
+    color: black;
+    padding: 10px;
+    margin-top: 0px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
+    text-align: left;
+    z-index: 9000;
+}
+.main-header__contactInfo__phone {
+    color: black;
+    margin: 0 ;
+    padding: 10px;
+    text-align: right;
+
+    
+}
+.main-header__contactInfo__address {
+    color:black;
+    padding: 10px;
+    margin: 0 ;
+    text-align: right;
+}
+.main-header [class*=fas]:before {
+    position: relative;
+    top: 2px;
+    right: 5px;
+}
+
+/*------------Estilos del menu-------------------*/
+.main-nav {
+    width: 100%;
+    position: relative;
+    z-index: 2000;
+    padding: 3px;
+    margin-top: 150px;
+    background: rgba(0,0,0,0.7);
+}
+
+
+
+.fa-utensils {
+    
+    color: white;
+    border:0px solid black;
+    border-radius: 3px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.2em;
+
+}
+
+.menu {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,.80);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.2s linear;
+}
+.menu__link {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+.menu__link:hover {
+    background: #DE423A;
+    text-decoration: none;
+    color:white;
+
+}
+.menu__link--select {
+    background: #DE423A
+}
+.mostrar {
+    height: 220px;
+}
+
+/*------------Estilo del banner-------------------*/
+
+
+.container-fluid {
+    margin-top: 80px;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.carousel-fade{
+    z-index: 1000;
+}
+.carouselExampleFade {
+    margin-top: -300px;
+   position: relative;
+
+}
+.carouselExampleFade:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    top: 0;
+}
+.carouselExampleFade img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+.container-fluid:befor {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 1000;
+    top: 0;
+}
+
+.banner:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    top: 0;
+}
+.banner__img {
+    width: 100%;
+    height: 500px;
+    margin-top: 150px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+/*------------Estilos principales--------------------*/
+.group--color .container {
+    background: #DE423A;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.main__title {
+    margin:15px 0;
+    font-size: 1.8em;
+    font-family: 'Pacifico',cursive;
+    font-weight: 100;
+}
+
+.column__title {
+    font-size: 1.3em;
+}
+
+.main__about__description .column:nth-child (2) {
+    padding: 10px;
+}
+.btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    background: #DE423A;
+    padding: 10px;
+    margin: 10px auto;
+}
+.group__title {
+    font-family: 'Pacifico',cursive;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.8em;
+    margin: 30px;
+}
+
+.today-special .column{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+.today-special__img {
+    margin: auto;
+    max-width: 350px;
+    cursor: pointer;
+}
+
+.todayspecial__title {
+    font-size: 1.0em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration:none;
+
+}
+
+
+/*-----------Estilos del footer---------------*/
+.main-footer {
+    background: #222;
+    color: white;
+    padding: 10px;
+    margin-top:20px;
+    padding-bottom: 20px;
+    font-size: .8em;
+}
+.copy {
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+}
+.main-footer [class*="fab "] {
+    color: white;
+    text-decoration: none;
+}
+.main-footer [class*="fab "]:before {
+    position: relative;
+    top:2px;
+    right: 5px;
+}
+
+
+
+/*------------Estilos Responsive----------------*/
+@media screen and (min-width: 480px){
+    .logo {
+        color: white;
+        margin-right: 50%;
+    }
+    .main-header__contactInfo {
+        text-align: center;
+        z-index: 4000;
+        margin-bottom: -40px;
+        margin-left: 50%;
+        margin-top: -70px;
+
+    }
+    .main-header__contactInfo__phone {
+        background: none;
+        color: white;
+        z-index: -5000;
+        
+    }
+    .main-header__contactInfo__address {
+        color: white;
+        z-index: -5000;
+        background: none;
+        top: 0px;
+    }
+    
+    
+    .main-nav {
+        background: rgba(0,0,0,0.85);
+        margin-top: 105px; 
+
+    }
+
+    .banner {
+        margin-top: -300px;
+        height: 600px;
+        z-index: -1000
+    }
+    
+    .column--50 {
+        width: 48%;
+    }
+    .column--50-25 {
+        width: 24.5%;
+    }
+    .column--33{
+        width: 32%;
+    }
+    .main__about__description .column:nth-child(2) {
+        padding-left: 20px;
+        font-size: .9em;
+    }
+    .today-special .column {
+        border:5px solid #DDD;
+        padding: 5px;
+    }
+    .today-special__img {
+        height: 200px;
+        object-fit: cover;
+        transition: all 0.5s;
+    }
+    .today-special__img:hover{
+      transform: scale(1.02);
+    }
+    .main-footer .container--flex{
+        align-items:flex-start; 
+    }
+  }
+
+@media screen and (min-width: 768px){
+    .main__title{
+        font-size: 2.2em;
+    }
+    .main__about__description {
+        margin-top: 30px;
+    }
+    .group_main__about__description .column--50:nth-child(2) {
+        font-size: 1em;
+    }
+    .main__about__description .column--50:nth-child(2) .column__txt{
+        line-height: 30px;
+
+    }
+    .column--50-25 {
+        width: 24.5%;
+    }
+    .column__title {
+        font-size: 1em;
+    }
+    .group__title {
+        font-size: 2.2em;
+    }
+}
+@media screen and (min-width: 1024px){
+    .container{
+        width: 1000px;
+    }
+
+    .main-nav {
+        padding: 0;
+    
+}
+.icon-menu {
+    display: none;
+}
+.menu {
+    position: static;
+    display: flex;
+    height: auto;
+    width: auto;
+}
+.menu__link {
+    padding: 20px;
+}
+.group--color .container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+} 
+.main__title {
+    font-size: 2.3em;
+}
+.today-special__title{
+    font-size: 1.4em;
+}
+.today-special__price{
+    font-size: 1.8em;
+   }
+   .main-footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+   }
+ } 
+ @media screen and (min-width: 1600px){
+    .container{
+        width: 1400px;
+    }
+    .main__about__desciption .column:nth-child(1) img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+    .today-special__img {
+        height: 300px;
+    }
+ }
+
+/*---------------------Estilos de Noticias------------------------------*/
+
+
+.our-team {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ .our-team .container--flex {
+    align-items: flex-start;
+ }
+ .our-team__title{
+    font-family: 'Pacifico', cursive;
+    color: #DE423A;
+    font-weight: bold;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+ }
+ .our-team__img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+ }
+ .our-team__txt{
+    padding: 10px;
+    text-align: justify;
+ }
+
+@media screen and (min-width: 480px) {
+    .our-team__img{
+       width: 150px;
+       height: 150px;
+    }
+}
+    
+@media screen and (min-width: 768px) {
+    .our-team__img{
+       width: 220px;
+       height: 220px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .our-team__img{
+       width: 310px;
+       height: 310px;
+    }
+    .our-team__title{
+        font-size: 2.2em;
+    }
+}
+        @media screen and (min-width: 1600px) {
+    .our-team__img{
+       width: 420px;
+       height: 420px;
+    }
+}
+/*-----------------------Estilos Galeria------------------*/
+
+.gallery__img {
+    object-fit: cover;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    
+    }
+
+.gallery__img:hover {
+    transform: scale(1.02);
+}
+
+.gallery__img--big {
+    height: 400px;
+}
+
+.gallery__img--small{
+    height: 200px;
+}
+
